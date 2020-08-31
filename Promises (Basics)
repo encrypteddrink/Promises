@@ -1,0 +1,27 @@
+// Creating a promise
+const willGoForIcecream=new Promise((resolve,reject)=>{
+  const rand=Math.random()
+  if(rand >0.5){
+    resolve()
+  }
+  else{
+    reject()
+  }
+})
+
+
+// ******** Using promise #Way1 ********
+willGoForIcecream.then(()=>{
+  console.log("Promise successful")
+}).catch(()=>{
+  console.log("Promise failed")
+})
+
+
+// ******** Using promise #Way2 ********
+// willGoForIcecream.then(()=>{
+//   console.log("Promise successful")
+// })
+// willGoForIcecream.catch(()=>{
+//   console.log("Promise failed")
+// })
